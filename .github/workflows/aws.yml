@@ -69,7 +69,8 @@ jobs:
       id: task-def
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
-        task-definition: task-definition.json
+        # task-definition: task-definition.json
+        task-definition: genesys-demo-tdn
         container-name: genesys-demo-container
         image: ${{ steps.build-image.outputs.image }}
 
